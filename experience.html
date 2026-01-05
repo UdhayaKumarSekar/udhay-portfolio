@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience | Udhay Kumar</title>
+  <link rel="stylesheet" href="./src/input.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bg-dark-900 text-white overflow-x-hidden selection:bg-secondary-500 selection:text-white">
+
+  <!-- Background Ambience -->
+  <div class="fixed inset-0 -z-10">
+    <div class="absolute top-0 left-0 w-full h-full bg-dark-900"></div>
+    <div
+      class="absolute top-[30%] left-[20%] w-[500px] h-[500px] bg-primary-600/20 rounded-full blur-[120px] animate-float">
+    </div>
+    <div
+      class="absolute bottom-[10%] right-[10%] w-[600px] h-[600px] bg-secondary-600/20 rounded-full blur-[120px] animate-float"
+      style="animation-delay: -6s;"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 z-50 transition-all duration-300">
+    <nav class="glass mx-4 mt-4 rounded-2xl max-w-7xl lg:mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html"
+        class="text-2xl font-display font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent hover:scale-105 transition-transform">
+        Udhay<span class="text-white">.dev</span>
+      </a>
+
+      <ul class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+        <li><a href="index.html" class="hover:text-primary-300 transition relative group">Home<span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all group-hover:w-full"></span></a>
+        </li>
+        <li><a href="about.html" class="hover:text-primary-300 transition relative group">About<span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all group-hover:w-full"></span></a>
+        </li>
+        <li><a href="projects.html" class="hover:text-primary-300 transition relative group">Projects<span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all group-hover:w-full"></span></a>
+        </li>
+        <li><a href="experience.html"
+            class="text-white hover:text-primary-300 transition relative group">Experience<span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all group-hover:w-full"></span></a>
+        </li>
+        <li><a href="skills.html" class="hover:text-primary-300 transition relative group">Skills<span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all group-hover:w-full"></span></a>
+        </li>
+        <li><a href="contact.html"
+            class="px-5 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 transition text-white">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Experience Section -->
+  <section class="max-w-5xl mx-auto px-6 py-32">
+    <div class="text-center mb-16 animate-slide-up">
+      <h2 class="section-title">Work Experience</h2>
+      <p class="text-slate-400 max-w-2xl mx-auto text-lg">
+        A track record of technical leadership and delivering value in enterprise environments.
+      </p>
+    </div>
+
+    <div class="relative border-l-2 border-white/10 ml-4 md:ml-10 space-y-12">
+
+      <!-- Job 1 -->
+      <div class="relative pl-8 md:pl-12 group">
+        <span
+          class="absolute -left-[9px] top-6 w-5 h-5 rounded-full border-4 border-dark-900 bg-primary-500 group-hover:bg-white transition duration-300 shadow-[0_0_15px_rgba(14,165,233,0.5)]"></span>
+
+        <div
+          class="glass-card p-8 group-hover:-translate-y-1 group-hover:border-primary-500/30 transition-all duration-300">
+          <div class="flex flex-col md:flex-row justify-between md:items-center mb-4 gap-2">
+            <h3 class="text-2xl font-bold text-white">Senior QA Engineer</h3>
+            <span
+              class="px-4 py-1 rounded-full bg-white/5 border border-white/10 text-primary-300 text-sm font-mono">2022 –
+              Present</span>
+          </div>
+          <h4 class="text-lg text-primary-400 font-medium mb-4">Property Insurance Domain</h4>
+
+          <ul class="space-y-3 text-slate-300 list-disc list-outside ml-4 marker:text-primary-500/50">
+            <li>Spearheaded the migration of legacy automation suite to a modern <strong>Playwright-based
+                framework</strong>, reducing execution time by 40%.</li>
+            <li>Designed and implemented a <strong>BDD framework</strong> using Cucumber, improving collaboration
+              between QA, Dev, and Product teams.</li>
+            <li>Integrated automated tests into <strong>GitLab CI/CD pipelines</strong>, ensuring immediate feedback on
+              every commit.</li>
+            <li>Mentored junior QA members on automation best practices and code reviews.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="relative pl-8 md:pl-12 group">
+        <span
+          class="absolute -left-[9px] top-6 w-5 h-5 rounded-full border-4 border-dark-900 bg-secondary-500 group-hover:bg-white transition duration-300 shadow-[0_0_15px_rgba(217,70,239,0.5)]"></span>
+
+        <div
+          class="glass-card p-8 group-hover:-translate-y-1 group-hover:border-secondary-500/30 transition-all duration-300">
+          <div class="flex flex-col md:flex-row justify-between md:items-center mb-4 gap-2">
+            <h3 class="text-2xl font-bold text-white">B2 Consultant</h3>
+            <span
+              class="px-4 py-1 rounded-full bg-white/5 border border-white/10 text-secondary-300 text-sm font-mono">2022</span>
+          </div>
+          <h4 class="text-lg text-secondary-400 font-medium mb-4">Major Banking Services Client</h4>
+
+          <ul class="space-y-3 text-slate-300 list-disc list-outside ml-4 marker:text-secondary-500/50">
+            <li>Optimized existing <strong>Selenium Hybrid Framework</strong> for better stability and error handling.
+            </li>
+            <li>Implemented <strong>API testing strategies</strong> using RestAssured, increasing test coverage for
+              backend services by 30%.</li>
+            <li>Automated critical regression workflows, significantly reducing manual test effort during release
+              cycles.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="relative pl-8 md:pl-12 group">
+        <span
+          class="absolute -left-[9px] top-6 w-5 h-5 rounded-full border-4 border-dark-900 bg-cyan-500 group-hover:bg-white transition duration-300 shadow-[0_0_15px_rgba(6,182,212,0.5)]"></span>
+
+        <div
+          class="glass-card p-8 group-hover:-translate-y-1 group-hover:border-cyan-500/30 transition-all duration-300">
+          <div class="flex flex-col md:flex-row justify-between md:items-center mb-4 gap-2">
+            <h3 class="text-2xl font-bold text-white">Test Engineer</h3>
+            <span class="px-4 py-1 rounded-full bg-white/5 border border-white/10 text-cyan-300 text-sm font-mono">2016
+              – 2022</span>
+          </div>
+          <h4 class="text-lg text-cyan-400 font-medium mb-4">Large-scale Financial Platforms</h4>
+
+          <ul class="space-y-3 text-slate-300 list-disc list-outside ml-4 marker:text-cyan-500/50">
+            <li>Executed extensive <strong>Functional and Regression testing</strong> for core banking modules.</li>
+            <li>Participated in <strong>Performance Testing</strong> activities using JMeter to validate system
+              scalability under load.</li>
+            <li>Documented comprehensive test plans, test cases, and defect reports in Jira.</li>
+            <li>Actively contributed to the transition from Waterfall to Agile methodologies.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 text-center border-t border-white/5 mt-auto">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-slate-500">© 2025 Udhay Portfolio. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

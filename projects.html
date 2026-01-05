@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Udhay Kumar</title>
+  <link rel="stylesheet" href="./src/input.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bg-dark-900 text-white overflow-x-hidden selection:bg-secondary-500 selection:text-white">
+
+  <!-- Background Ambience -->
+  <div class="fixed inset-0 -z-10">
+    <div class="absolute top-0 left-0 w-full h-full bg-dark-900"></div>
+    <div
+      class="absolute top-[20%] right-[-10%] w-[500px] h-[500px] bg-primary-600/20 rounded-full blur-[120px] animate-float">
+    </div>
+    <div
+      class="absolute bottom-[20%] left-[-10%] w-[600px] h-[600px] bg-secondary-600/20 rounded-full blur-[120px] animate-float"
+      style="animation-delay: -5s;"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 z-50 transition-all duration-300">
+    <nav class="glass mx-4 mt-4 rounded-2xl max-w-7xl lg:mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html"
+        class="text-2xl font-display font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent hover:scale-105 transition-transform">
+        Udhay<span class="text-white">.dev</span>
+      </a>
+
+      <ul class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+        <li><a href="index.html" class="hover:text-primary-300 transition relative group">Home<span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all group-hover:w-full"></span></a>
+        </li>
+        <li><a href="about.html" class="hover:text-primary-300 transition relative group">About<span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all group-hover:w-full"></span></a>
+        </li>
+        <li><a href="projects.html" class="text-white hover:text-primary-300 transition relative group">Projects<span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all group-hover:w-full"></span></a>
+        </li>
+        <li><a href="experience.html" class="hover:text-primary-300 transition relative group">Experience<span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all group-hover:w-full"></span></a>
+        </li>
+        <li><a href="skills.html" class="hover:text-primary-300 transition relative group">Skills<span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all group-hover:w-full"></span></a>
+        </li>
+        <li><a href="contact.html"
+            class="px-5 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 transition text-white">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="max-w-7xl mx-auto px-6 py-32">
+    <div class="text-center mb-16 animate-slide-up">
+      <h2 class="section-title">Key Projects</h2>
+      <p class="text-slate-400 max-w-2xl mx-auto text-lg">
+        Showcasing technical excellence in Automation Frameworks, API Testing, and Performance Engineering.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Project 1 -->
+      <article class="glass-card p-8 group hover:-translate-y-2 transition-transform duration-500">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-2xl font-bold text-white group-hover:text-primary-400 transition">Selenium Hybrid Framework
+          </h3>
+          <div
+            class="px-3 py-1 rounded-full bg-primary-500/20 text-primary-300 text-xs font-bold border border-primary-500/30">
+            UI Automation</div>
+        </div>
+
+        <p class="text-slate-400 text-sm font-mono mb-6 flex flex-wrap gap-2">
+          <span>Java</span> • <span>Selenium</span> • <span>TestNG</span> • <span>Maven</span> • <span>Jenkins</span>
+        </p>
+
+        <p class="text-slate-300 mb-6 leading-relaxed">
+          Designed and implemented a scalable hybrid automation framework using Page Object Model (POM) and Data-Driven
+          approach.
+        </p>
+
+        <ul class="text-slate-400 text-sm space-y-2 list-item ml-4 list-disc marker:text-primary-500">
+          <li>Implemented reusable action libraries and WebDriver utilities.</li>
+          <li>Integrated TestNG report generation and parameterized test execution.</li>
+          <li>Created cross-browser test execution suite.</li>
+          <li>Integrated automation execution into Jenkins CI/CD pipeline.</li>
+        </ul>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="glass-card p-8 group hover:-translate-y-2 transition-transform duration-500">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-bold text-white group-hover:text-secondary-400 transition">REST API Automation</h3>
+            <div
+              class="px-3 py-1 rounded-full bg-secondary-500/20 text-secondary-300 text-xs font-bold border border-secondary-500/30">
+              API Testing</div>
+          </div>
+
+          <p class="text-slate-400 text-sm font-mono mb-6 flex flex-wrap gap-2">
+            <span>RestAssured</span> • <span>Java</span> • <span>TestNG</span> • <span>Postman</span>
+          </p>
+
+          <p class="text-slate-300 mb-6 leading-relaxed">
+            Built API automation suite using RestAssured to validate service endpoints, request/response flows, and
+            authentication.
+          </p>
+
+          <ul class="text-slate-400 text-sm space-y-2 list-item ml-4 list-disc marker:text-secondary-500">
+            <li>Implemented CRUD operations for REST API endpoints.</li>
+            <li>Validated responses using assertions, JSON parsing, and schema validation.</li>
+            <li>Integrated tests into CI/CD with Jenkins for scheduled execution.</li>
+            <li>Created environment-specific configuration management.</li>
+          </ul>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="glass-card p-8 group hover:-translate-y-2 transition-transform duration-500">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-bold text-white group-hover:text-green-400 transition">Playwright Framework</h3>
+            <div
+              class="px-3 py-1 rounded-full bg-green-500/20 text-green-300 text-xs font-bold border border-green-500/30">
+              Modern UI</div>
+          </div>
+
+          <p class="text-slate-400 text-sm font-mono mb-6 flex flex-wrap gap-2">
+            <span>Playwright</span> • <span>Java/TS</span> • <span>TestNG</span>
+          </p>
+
+          <p class="text-slate-300 mb-6 leading-relaxed">
+            Developed a modern UI automation framework using Playwright to achieve faster execution and stable selectors
+            across multiple browsers.
+          </p>
+
+          <ul class="text-slate-400 text-sm space-y-2 list-item ml-4 list-disc marker:text-green-500">
+            <li>Created readable test flows using Playwright Page Objects.</li>
+            <li>Added locator strategies using modern Playwright selectors.</li>
+            <li>Configured parallel execution for faster feedback cycles.</li>
+            <li>Set up reporting and environment configuration handling.</li>
+          </ul>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="glass-card p-8 group hover:-translate-y-2 transition-transform duration-500">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-bold text-white group-hover:text-red-400 transition">Performance Testing Suite</h3>
+            <div class="px-3 py-1 rounded-full bg-red-500/20 text-red-300 text-xs font-bold border border-red-500/30">
+              Performance</div>
+          </div>
+
+          <p class="text-slate-400 text-sm font-mono mb-6 flex flex-wrap gap-2">
+            <span>JMeter</span> • <span>Jenkins</span> • <span>InfluxDB</span>
+          </p>
+
+          <p class="text-slate-300 mb-6 leading-relaxed">
+            Designed performance test plans for load, stress, and endurance testing of enterprise web applications.
+          </p>
+
+          <ul class="text-slate-400 text-sm space-y-2 list-item ml-4 list-disc marker:text-red-500">
+            <li>Created JMeter test plans using Thread Groups, Samplers, and Listeners.</li>
+            <li>Captured performance metrics including response times & throughput.</li>
+            <li>Used CSV Data Config for dynamic test data injection.</li>
+            <li>Integrated performance tests with Jenkins for continuous monitoring.</li>
+          </ul>
+        </article>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 text-center border-t border-white/5 mt-auto">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-slate-500">© 2025 Udhay Portfolio. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

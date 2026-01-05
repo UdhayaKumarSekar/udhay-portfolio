@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Udhay Kumar | QA Automation Specialist</title>
+  <link rel="stylesheet" href="./src/input.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bg-dark-900 text-white overflow-x-hidden selection:bg-secondary-500 selection:text-white overflow-hidden">
+
+  <!-- Cinematic Intro Overlay -->
+  <!-- Cinematic Intro Overlay -->
+  <div id="intro-overlay"
+    class="fixed inset-0 z-[100] bg-dark-900 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 p-6 transition-colors duration-1000">
+
+    <!-- Photo Container (Starts Hidden/Small) -->
+    <div id="intro-photo"
+      class="relative group opacity-0 scale-50 transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
+      <!-- We use a fixed size here initially, but JS will animate it -->
+      <div id="intro-photo-inner"
+        class="w-36 h-36 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white/10 shadow-[0_0_60px_rgba(168,85,247,0.4)] relative z-10 bg-dark-800">
+        <img src="./assets/images/profile.png" alt="Udhay" class="w-full h-full object-cover">
+      </div>
+      <!-- Glow effect -->
+      <div class="absolute inset-0 bg-purple-500/30 rounded-full blur-2xl -z-10 animate-pulse-slow"></div>
+    </div>
+
+    <!-- Text Container -->
+    <div class="relative z-10 flex flex-col items-center md:items-start text-center md:text-left">
+      <!-- <h1 id="intro-name" -->
+      <!-- class="text-5xl md:text-7xl lg:text-8xl font-black font-display text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 drop-shadow-[0_0_25px_rgba(168,85,247,0.6)] tracking-tight flex flex-wrap justify-center md:justify-start gap-x-1 md:gap-x-2 filter brightness-110"> -->
+      <!-- JS will populate Udhaya Kumar Sekar -->
+      <!-- </h1> -->
+
+      <h1 id="intro-name" class="text-4xl md:text-5xl lg:text-6xl 
+         font-black font-display 
+         text-transparent bg-clip-text 
+         bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500
+         drop-shadow-[0_0_20px_rgba(168,85,247,0.5)]
+         tracking-tight
+         flex justify-center md:justify-start gap-x-1 md:gap-x-2
+         whitespace-nowrap
+         filter brightness-110">
+      </h1>
+
+      <h2 id="intro-role"
+        class="mt-4 text-2xl md:text-4xl font-bold text-white/90 tracking-widest uppercase opacity-0 transform translate-y-4">
+        <span
+          class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">Senior
+          QA Engineer</span>
+      </h2>
+    </div>
+
+  </div>
+
+  <!-- Background Ambience -->
+  <div class="fixed inset-0 -z-10">
+    <div class="absolute top-0 left-0 w-full h-full bg-dark-900"></div>
+    <div
+      class="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-primary-600/30 rounded-full blur-[120px] animate-float">
+    </div>
+    <div
+      class="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-secondary-600/20 rounded-full blur-[120px] animate-float"
+      style="animation-delay: -3s;"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 z-50 transition-all duration-300">
+    <nav class="glass mx-4 mt-4 rounded-2xl max-w-7xl lg:mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html"
+        class="text-2xl font-display font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent hover:scale-105 transition-transform">
+        Udhay<span class="text-white">.dev</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+        <li><a href="index.html" class="text-white hover:text-primary-300 transition relative group">Home<span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all group-hover:w-full"></span></a>
+        </li>
+        <li><a href="about.html" class="hover:text-primary-300 transition relative group">About<span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all group-hover:w-full"></span></a>
+        </li>
+        <li><a href="projects.html" class="hover:text-primary-300 transition relative group">Projects<span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all group-hover:w-full"></span></a>
+        </li>
+        <li><a href="experience.html" class="hover:text-primary-300 transition relative group">Experience<span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all group-hover:w-full"></span></a>
+        </li>
+        <li><a href="skills.html" class="hover:text-primary-300 transition relative group">Skills<span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 transition-all group-hover:w-full"></span></a>
+        </li>
+        <li><a href="contact.html"
+            class="px-5 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 transition text-white">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu Button (Placeholder) -->
+      <button class="md:hidden text-white text-2xl">
+        &#9776;
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center pt-20 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 items-center">
+
+      <div class="order-2 md:order-1 space-y-8 animate-slide-up">
+        <div
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
+          <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+          <span class="text-sm text-slate-300">Available for freelance & full-time</span>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+          Elevating Quality with
+          <span
+            class="bg-gradient-to-r from-primary-400 via-secondary-400 to-primary-400 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">Intelligent
+            Automation</span>
+        </h1>
+
+        <p class="text-xl text-slate-400 leading-relaxed max-w-lg">
+          Senior QA Engineer specialized in building robust automation frameworks, CI/CD pipelines, and ensuring
+          flawless digital experiences.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="projects.html" class="btn-primary flex items-center gap-2 group">
+            View Projects
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform group-hover:translate-x-1 transition"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+          <a href="contact.html"
+            class="px-6 py-3 rounded-xl glass hover:bg-white/20 border border-white/10 transition-all font-semibold flex items-center gap-2">
+            Contact Me
+          </a>
+        </div>
+
+        <!-- Mini Stats -->
+        <div class="flex gap-8 pt-4 border-t border-white/10">
+          <div>
+            <h4 class="text-3xl font-bold text-white">8.5+</h4>
+            <p class="text-sm text-slate-400">Years Experience</p>
+          </div>
+          <div>
+            <h4 class="text-3xl font-bold text-white">10+</h4>
+            <p class="text-sm text-slate-400">Projects Delivered</p>
+          </div>
+          <div>
+            <h4 class="text-3xl font-bold text-white">100%</h4>
+            <p class="text-sm text-slate-400">Production Releases Supported</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-1 md:order-2 flex justify-center relative">
+        <div
+          class="absolute inset-0 bg-gradient-to-tr from-primary-600/20 to-secondary-600/20 rounded-full blur-3xl animate-pulse-slow">
+        </div>
+        <div class="relative w-80 h-80 md:w-[450px] md:h-[450px]">
+          <div
+            class="absolute inset-0 rounded-[3rem] bg-gradient-to-tr from-white/10 to-white/5 rotate-6 backdrop-blur-sm border border-white/10">
+          </div>
+          <img id="hero-img" src="./assets/images/profile.png" alt="Udhay Kumar"
+            class="relative z-10 w-full h-full object-cover rounded-[2.5rem] shadow-2xl border-2 border-white/20 transform hover:-translate-y-2 transition-transform duration-500">
+
+          <!-- Floating Badges -->
+          <div class="absolute -right-4 top-10 glass p-3 rounded-xl flex items-center gap-3 animate-float z-20">
+            <div
+              class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 text-xl font-bold">
+              S</div>
+            <div>
+              <p class="text-xs text-slate-400">Expert in</p>
+              <p class="font-bold text-sm">Selenium</p>
+            </div>
+          </div>
+
+          <div class="absolute -left-8 top-10 glass p-3 rounded-xl flex items-center gap-3 animate-float z-20">
+            <div
+              class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 text-xl font-bold">
+              J</div>
+            <div>
+              <p class="text-xs text-slate-400">Expert in</p>
+              <p class="font-bold text-sm">Core Java</p>
+            </div>
+          </div>
+
+          <div class="absolute -left-8 bottom-20 glass p-3 rounded-xl flex items-center gap-3 animate-float z-20"
+            style="animation-delay: 2s;">
+            <div
+              class="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-400 text-xl font-bold">
+              P</div>
+            <div>
+              <p class="text-xs text-slate-400">Pro Code</p>
+              <p class="font-bold text-sm">Python</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Tech Stack Marquee Section -->
+  <section class="py-20 bg-dark-800/50 backdrop-blur-sm border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-slate-400 text-sm tracking-widest uppercase mb-10">Powering Next-Gen Quality Assurance</p>
+
+      <div
+        class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+        <!-- Replaced text with styled badges for now, ideally SVGs -->
+        <span class="text-2xl font-bold hover:text-primary-400 transition hover:scale-110 cursor-default">Java</span>
+        <span class="text-2xl font-bold hover:text-green-400 transition hover:scale-110 cursor-default">Selenium</span>
+        <span class="text-2xl font-bold hover:text-yellow-400 transition hover:scale-110 cursor-default">Python</span>
+        <span class="text-2xl font-bold hover:text-blue-400 transition hover:scale-110 cursor-default">TestNG</span>
+        <span
+          class="text-2xl font-bold hover:text-purple-400 transition hover:scale-110 cursor-default">RestAssured</span>
+        <span class="text-2xl font-bold hover:text-orange-400 transition hover:scale-110 cursor-default">Jenkins</span>
+        <span class="text-2xl font-bold hover:text-red-400 transition hover:scale-110 cursor-default">Git</span>
+        <span class="text-2xl font-bold hover:text-sky-400 transition hover:scale-110 cursor-default">Playwright</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 text-center border-t border-white/5 mt-auto">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-slate-500">© 2025 Udhay Portfolio. All Rights Reserved.</p>
+      <div class="flex gap-6 text-slate-400">
+        <a href="#" class="hover:text-white transition">LinkedIn</a>
+        <a href="#" class="hover:text-white transition">GitHub</a>
+        <a href="#" class="hover:text-white transition">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./src/cinematic-intro.js" type="module"></script>
+</body>
+
+</html>
